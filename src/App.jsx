@@ -1,16 +1,6 @@
 import { CORE_CONCEPTS } from "./data";
 import Header from "./components/Header";
-
-
-function CoreConcept({image, title, description}){
-  return(
-    <li>
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </li>
-  );
-}
+import CoreConcept from "./components/CoreConcepts";
 
 function App() {
   return (
@@ -30,5 +20,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
