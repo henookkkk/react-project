@@ -1,23 +1,6 @@
-import reactImg from "./assets/react-core-concepts.png";
 import { CORE_CONCEPTS } from "./data";
+import Header from "./components/Header";
 
-let reactDescription = ["fundamental", "core", "crucial"];
-function getRandNum(){
-  return Math.floor(Math.random()* reactDescription.length);
-}
-
-function Header(){
-  return(
-    <header>
-      <img src={reactImg} alt="Stylized atom" />
-      <h1>React Essentials</h1>
-      <p>
-        {reactDescription[getRandNum()]} React concepts you will need for almost any app you are
-        going to build!
-      </p>
-    </header>
-  );
-}
 
 function CoreConcept({image, title, description}){
   return(
